@@ -1,0 +1,23 @@
+{
+    "contact": {
+    "firstName": "Chris",
+    "lastName": "Norseth",
+    "email": "chris@norseth.com",
+    "favoriteColor": "hite",
+    "birthday": "1/26/87"
+},
+"contact2":{
+    "firstName": "Erika",
+    "lastName": "Norseth",
+    "email": "erika@norseth.com",
+    "favoriteColor": "green",
+    "birthday": "3/16/13"
+},
+"contact3":{
+    "firstName": "Georgia",
+    "lastName": "Norseth",
+    "email": "gigi@norseth.com",
+    "favoriteColor": "pink",
+    "birthday": "7/14/16"
+}
+}
