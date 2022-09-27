@@ -1,3 +1,20 @@
-// LOCALHOST ### GET http://localhost:8080/contacts ### GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b2 ### GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b3 ### GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b4
 
-// PRODUCTION Deploy ### GET https://cse341-instructor.herokuapp.com/contacts ### GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b2 ### GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b3 ### GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b4
+LOCALHOST ### GET http://localhost:3000/contacts ### GET http://localhost:3000/contacts/622023f642f9ab4cd6e060b2 ### GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b3 ### GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b4
+
+ PRODUCTION Deploy 
+GET https://cse341-norseth.onrender.com/
+ ### GET https://cse341-norseth.onrender.com/contacts/632a5aa6b963f0eec99ff51b
+ ### GET https://cse341-norseth.onrender.com/contacts/632a5abbb963f0eec9a03b83
+ ### GET https://cse341-norseth.onrender.com/contacts/632a5aceb963f0eec9a075cc
+
+ POST https://cse341-norseth.onrender.com/ HTTP/1.1
+ content-type: application/json
+
+ {
+    "firstName": "Marianne",
+    "lastName": "Norseth",
+    "email": "annie@norseth.com",
+    "favoriteColor": "purple",
+    "birthday": "5/21/2019"
+
+ }

@@ -2,19 +2,23 @@
   "name": "rest",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "devstart": "nodemon server.js"
+    "devstart": "nodemon server.js",
+    "lint": "eslint .",
+    "prettier": "prettier ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "dotenv": "^16.0.2",
+    "eslint": "^8.24.0",
     "express": "^4.16.3",
-    "mongodb": "^4.4.0"
+    "mongodb": "^4.4.0",
+    "prettier": "^2.7.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.4"
