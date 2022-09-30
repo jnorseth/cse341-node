@@ -1,20 +1,43 @@
-LOCALHOST ### GET http://localhost:8000/contacts 
-### GET http://localhost:3000/contacts/622023f642f9ab4cd6e060b2 ### GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b3 ### GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b4
+# GET request that gets list of all contacts
+GET http://localhost:8000/contacts HTTP/1.1
 
- PRODUCTION Deploy 
-GET https://cse341-norseth.onrender.com/
- ### GET https://cse341-norseth.onrender.com/contacts/632a5aa6b963f0eec99ff51b
- ### GET https://cse341-norseth.onrender.com/contacts/632a5abbb963f0eec9a03b83
- ### GET https://cse341-norseth.onrender.com/contacts/632a5aceb963f0eec9a075cc
 
- POST https://cse341-norseth.onrender.com/ HTTP/1.1
- content-type: application/json
+GET http://localhost:8000/contacts/632a5aa6b963f0eec99ff51b HTTP/1.1
 
- {
+
+# Format expected:
+# {
+#     "firstName": "Ninja",
+#     "lastName": "Amoodi",
+#     "email": "ninjaamoodi@gmail.com",
+#     "favoriteColor": "Green",
+#     "birthday": "11/11/2021"
+# }
+POST http://localhost:8000/contacts HTTP/1.1
+
+# PUT request that updates an existing contact with ID 632a0aa66fb797661375f88a
+# Format expected is more or less like the POST request
+PUT http://localhost:8000/contacts/632a5aa6b963f0eec99ff51b HTTP/1.1
+
+# DELETE request that deletes an existing contact with ID 632a0aa66fb797661375f88a
+DELETE http://localhost:3000/contacts/632a0acc825924792b0b095a HTTP/1.1
+
+
+
+# Same requests but on render
+GET https://cse341-norseth.onrender.com/contacts/ HTTP/1.1
+
+GET https://cse341-norseth.onrender.com/contacts/ HTTP/1.1
+
+POST https://cse341-norseth.onrender.com/contacts/ HTTP/1.1
+{
     "firstName": "Marianne",
     "lastName": "Norseth",
     "email": "annie@norseth.com",
     "favoriteColor": "purple",
     "birthday": "5/21/2019"
+}
 
- }
+PUT https://cse341-norseth.onrender.com/contacts/ HTTP/1.1
+
+DELETE https://cse341-norseth.onrender.com/contacts/ HTTP/1.1
