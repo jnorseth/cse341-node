@@ -2,6 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
+const cors = require('cors');
 
 const port = process.env.PORT || 8000;
 const app = express();
@@ -14,6 +15,10 @@ app
   .use(express.json())
   .use(express.urlencoded({ extended: true }))
   .use('/', require('./routes'));
+
+  app.use(cors({
+    origin: '*'
+}));
 
 app
   .use(bodyParser.json())
